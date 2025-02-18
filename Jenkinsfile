@@ -4,7 +4,9 @@ pipeline {
     stages {
         stage('Clone Repository') {
             steps {
-                git 'https://github.com/your-username/django-cicd.git'
+                git branch: 'main',
+                    credentialsId: 'SHA256:7QQIMkzw59n640kYcKk2vtghCFEEFmlxizx456AQdtM',
+                    url: 'git@github.com:Rishabhdev-ui/jenkins-CICD.git'
             }
         }
         
