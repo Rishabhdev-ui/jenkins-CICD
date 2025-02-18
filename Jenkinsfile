@@ -4,9 +4,7 @@ pipeline {
     stages {
         stage('Clone Repository') {
             steps {
-                git branch: 'main',
-                    credentialsId: 'SHA256:7QQIMkzw59n640kYcKk2vtghCFEEFmlxizx456AQdtM',
-                    url: 'git@github.com:Rishabhdev-ui/jenkins-CICD.git'
+                git credentialsId: 'SHA256:7QQIMkzw59n640kYcKk2vtghCFEEFmlxizx456AQdtM', url: 'git@github.com:Rishabhdev-ui/jenkins-CICD.git'
             }
         }
         
